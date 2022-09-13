@@ -1,0 +1,14 @@
+<br>
+<div class="container" >
+    <div *ngIf="service.status()" class="row justify-content-between">
+      <div routerLink="/home/players" class="btn btn-success col-2 pull-left">Player</div>
+      <div routerLink="/home/sports" class="btn btn-secondary col-2">Sport</div>
+      <div routerLink="/home/events" class="btn btn-info col-2">Event</div>
+      <div routerLink="/home/get-participants" class="btn btn-primary col-2 pull-right">Participation</div>
+
+      <router-outlet></router-outlet>
+      <!--<app-participation></app-participation>-->
+      <!--<app-player></app-player>-->
+      <!--<app-sport-event></app-sport-event>-->
+    </div>
+</div>
